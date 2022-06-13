@@ -5,22 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.8.0/dist/leaflet.css"
+        integrity="sha512-hoalWLoI8r4UszCkZ5kL8vayOGVae1oxXe/2A4AO6J9+580uKHDO3JdHb7NzwwzK5xr/Fs0W40kiNHxM9vyTtQ=="
+        crossorigin="" />
     <link rel="stylesheet" href="../css/styles.css">
+        <link rel="stylesheet" href="../css/style-map.css">
+
 </head>
 <body>
 
-    <section class="Significado">
+    <section class="Significado" >
+        <button class="Abajo">Abajo</button>
     <div class="logo-container">
         <img src="../img/Logo Unitec.png" class="logo2">
         <p class="texto">Uidet Unitec</p>
-        <p>Insertar  breve descripcion</p>
+        <p>Unidad de Investigación, Desarrollo, Extensión y Transferencia para la Calidad de la Educación en Ingeniería con
+        orientación al uso de TIC</p>
     </div>
-    <div class="imagenes">
+
+    <!-- <div class="imagenes">
         <img src="../img/prueba1.jpg" class="Imagen1">
         <img src="../img/prueba2.jpg" class="Imagen2">
         <img src="../img/prueba3.jpg" class="Imagen3">
 
-    </div>
+    </div> -->
     </section>
 
     <nav class="nav-bar arriba">
@@ -43,7 +51,11 @@
         <section class="Sectores">
         </section>
 
-        <section class="mapa">
+        <section class="sectionmap">
+            <div class="bordermap">
+                <div id="mapa">
+                </div>
+            </div>
         </section>
 
 
@@ -56,13 +68,13 @@
                 </div>
                 <div class=img-btn>
                     <a href="https://www.facebook.com/unlp.edu/"><img src="../img/facebook.png" class="facebook" ></a>
-                    <a href=""><img src="../img/Instagram.png" class="facebook"></a>
-
-                
                 </div>
             </div>
         </footer>
 </body>
+<script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
+    integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
+    crossorigin=""></script>
 <script src="./../js/scrrip.js"></script>
 </html>
 
