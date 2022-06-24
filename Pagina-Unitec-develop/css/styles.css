@@ -5,11 +5,10 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   background-color: #ffffff;
 }
-
 
 .oculto {
   display: none;
@@ -54,9 +53,8 @@ section {
   font-size: 250%;
   margin: 0px;
   padding-left: 25px;
-  font-family: "Andale Mono", monospace;
+  font-family: "Poppins", monospace;
   -webkit-text-stroke: 1px rgb(255, 255, 255);
-
 }
 .Significado p {
   padding-left: 25px;
@@ -73,11 +71,34 @@ section {
   width: 40px;
 }
 
-
 .Descripcion {
   background-image: linear-gradient(white, rgb(235, 243, 253));
   position: relative;
   z-index: 0;
+}
+
+.Descripcion h2 {
+  text-align: center;
+}
+
+.Desc {
+  display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.Desc div {
+  width: 100%;
+}
+
+.Images {
+  position: relative;
+}
+.Images img {
+  position: absolute;
+  height: 300px;
+  width: 450px;
+  top: 29px;
 }
 
 .rectangulogris {
@@ -94,6 +115,6 @@ section {
   background-image: linear-gradient(rgb(235, 243, 253), rgb(217, 233, 255));
 }
 
-.leaflet-pane{
+.leaflet-pane {
   background-color: red;
 }
