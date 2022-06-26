@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.Sectores {
+  background-color: #aedbce2f;
+}
+
+
+.box .Espacios {
+  background-color: #b3d4d3;
+  position: absolute;
+  z-index: 1;
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+  bottom: -131%;
+  left: 37%;
+}
+
+.Espacios p {
+  color: rgb(75, 75, 75);
+  font-size: 80%;
+  font-weight: 550;
+  padding-left: 5px;
+}
+
+.carrousel {
+  width: 600px;
+  height: 450px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 150px;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* overflow: hidden; */
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+.carrousel-items {
+  position: relative;
+  width: 60%;
+  height: 100%;
+  z-index: 1;
+}
+
+.carrousel-item {
+  width: 100%;
+  height: auto;
+
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  transition: 0.4s ease;
+  opacity: 0;
+
+  display: flex;
+  flex-direction: column;
+
+  background-color: #eee;
+
+  transform: scale(0.6);
+}
+.carrousel-item img {
+  /* max-width: 100%; */
+  flex-grow: 0.5;
+}
+.carrousel-item .info-card {
+  font-family: "Poppins", sans-serif;
+  padding-left: 12px;
+  color: rgb(75, 75, 75);
+}
+
+.left {
+  display: flex;
+  transform: translateX(-40%) scale(0.6);
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.center {
+  display: flex;
+  transform: translateX(0) scale(0.8);
+  z-index: 1;
+  opacity: 1;
+}
+
+.rigth {
+  display: flex;
+  transform: translateX(40%) scale(0.6);
+  z-index: 0;
+  opacity: 0.5;
+}
+.rigth p {
+  opacity: 0;
+}
+.left p {
+  opacity: 0;
+}
+.center p {
+  opacity: 1;
+}
+
+.click-area {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+}
