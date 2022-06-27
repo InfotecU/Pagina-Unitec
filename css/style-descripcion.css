@@ -17,6 +17,7 @@
   padding-left: 4%;
   padding-right: 4%;
   flex-direction: column;
+  position: relative;
 }
 
 .Desc div {
@@ -73,14 +74,15 @@
   /* border-radius: 13px; */
 }
 
-.desc__container .QueSomos {
+.desc__container .QueSomos, .desc__container .Objetivos {
+  width: 270px;
   background-color:#b3d4d3;
+  position: absolute;
   height: auto;
-  width: 40%;
-  position: relative;
   z-index: 1;
+  transform: translateY(-50%);
+  left: 100px;
 
-  border-radius: 10px;
 }
 
 .QueSomos a {
@@ -90,20 +92,11 @@
   padding: 9%;
 }
 
-.desc__container .Objetivos {
-  background-color: #b3d4d3;
-  position: absolute;
-  z-index: 250;
-  height: auto;
-  width: 18%;
-  top: 13%;
-  right: 26.5%;
-  border-radius: 10px;
-}
-
 .Objetivos a {
   color: rgb(75, 75, 75);
   font-size: 80%;
   font-weight: 550;
   padding: 9%;
 }
+
+
