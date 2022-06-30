@@ -1,9 +1,9 @@
 const src = [
   "Late.jpg",
   "Late.jpg",
+  "Sistema2.jpg",
   "Late.jpg",
-  "Late.jpg",
-  "Late.jpg",
+  "logolabtic.png",
   "Infotec.png",
 ];
 const cards = [
@@ -17,7 +17,7 @@ const cards = [
 const descripciones = [
   "Laboratorio de asistencia Técnica a establecimientos de educación Especial.",
   "Espacio de desarrollo de rampas tecnológicas para la accesibilidad e inclusión de PcD",
-  "Este espacio cuenta con 2 Impresoras 3D: una Prusa i3 y una Makerbot replicador mini; un Scanner 3D y un CNC (Control Numérico Computarizado, en desarrollo).",
+  "Este espacio cuenta con 2 Impresoras 3D: una Prusa i3 y una Makerbot replicador mini; un Scanner 3D y un CNC",
   "En este espacio se desarrolla fundamentalmente trabajos bajo ARDUINO, en lo referente a automatización del hogar ",
   "Laboratorio de desarrollo de Hardware y Software con orientación al uso de TIC`s..",
   "Espacio de extensión dedicado al desarrollo de software",
@@ -30,9 +30,11 @@ const templateCard = (label, id, src, descripcion) => {
   <img src="./../img/${src}" />
   <div class="info-card">
   <h3>${label}</h3>
+  <div class="info-container">
   <p class="Informacion">
   ${descripcion}
   </p>
+  </div>
   </div>
   <div class="click-area" data-card="${id}"></div>
   </div>`;
