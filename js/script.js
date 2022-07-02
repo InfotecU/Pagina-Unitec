@@ -1,9 +1,10 @@
 window.addEventListener("scroll", (e) => {
 document.querySelector("nav").style.backgroundColor = "#285467";
-
+document.querySelector("nav ul .btn button").style.backgroundColor ="#eceff1";
+  
   //   console.log(window.scrollY);
   document.querySelector("nav").classList.add("arriba");
-  if (window.scrollY > window.innerHeight) {
+  if (window.scrollY >   window.innerHeight-58) {
     document.querySelector("nav").classList.remove("arriba");
   }
 });
@@ -46,6 +47,19 @@ button.addEventListener("click", (e) => {
 
 });
 
+const scrolear = document.querySelector(".contacto")
+scrolear.addEventListener("click", (e) => {
+  console.log("bbb");
+
+  window.scrollTo({
+     top: window.innerHeight*4,
+     behavior: "smooth",
+  });
+ 
+
+});
+
+
 
 //script mapa
 
@@ -57,9 +71,21 @@ L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+let greenIcon = L.icon({
+  iconUrl: 'leaf-green.png',
+  shadowUrl: 'leaf-shadow.png',
+
+  iconSize:     [38, 95], // size of the icon
+  shadowSize:   [50, 64], // size of the shadow
+  iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
+  shadowAnchor: [4, 62],  // the same for the shadow
+  popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 L.marker([-34.9066305063711, -57.94279074422511]).addTo(map)
-    .bindPopup('lab unitec')
+    .bindPopup('Laboratorio Principal')
     .openPopup();
+    
 
 // setTimeout(() => {
 //   window.scrollTo({
@@ -71,3 +97,4 @@ L.marker([-34.9066305063711, -57.94279074422511]).addTo(map)
 //     document.querySelector("nav").classList.remove("arriba");
 //   }
 // }, 2000);
+
